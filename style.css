@@ -161,3 +161,56 @@ footer {
     font-size: 18px;
   }
 }
+/* Section logo */
+.logo-section {
+  position: relative; /* Positionnement relatif pour permettre le positionnement absolu de l'overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* La section occupe 70% de la hauteur de la fenêtre */
+}
+
+.logo-container {
+  position: relative; /* Positionnement relatif pour le conteneur */
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; /* Positionnement absolu pour superposer le texte et les liens */
+  top: 50%; /* Centrage vertical */
+  left: 50%; /* Centrage horizontal */
+  transform: translate(-50%, -50%); /* Ajuste pour centrer parfaitement */
+  text-align: center; /* Centrer le texte */
+  color: white; /* Couleur du texte */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour améliorer la lisibilité */
+  padding: 20px; /* Espacement autour du texte */
+  border-radius: 10px; /* Coins arrondis */
+}
+
+.overlay h1 {
+  margin-bottom: 10px; /* Espacement entre le titre et la navigation */
+}
+
+.overlay nav ul {
+  list-style-type: none; /* Supprime les puces */
+  padding: 0; /* Supprime le padding */
+}
+
+.overlay nav ul li {
+  display: inline-block; /* Liens affichés horizontalement */
+  margin: 0 10px; /* Espacement entre les liens */
+}
+
+.overlay nav ul li a {
+  color: white; /* Couleur des liens */
+  text-decoration: none; /* Supprime le soulignement */
+}
+
+.overlay nav ul li a:hover {
+  color: #007BFF; /* Couleur au survol */
+}
+
