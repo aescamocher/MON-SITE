@@ -1,18 +1,17 @@
-/* Définir des styles globaux pour améliorer l'accessibilité */
+/* Styles globaux et réinitialisation */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Style général du corps */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   padding: 20px;
 }
 
-/* Style de l'en-tête et de la navigation */
+/* En-tête */
 header {
   text-align: center;
   margin-bottom: 20px;
@@ -37,7 +36,21 @@ nav ul li a:hover {
   color: #007BFF;
 }
 
-/* Sections */
+/* Section logo */
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* La section occupe 70% de la hauteur de la fenêtre */
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  width: 300px; /* Taille de l'image (ajustable) */
+}
+
+/* Section services */
 section {
   margin-bottom: 20px;
 }
